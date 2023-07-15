@@ -10,7 +10,7 @@ The Best Time to Buy and Sell Stock problem is a common coding problem where you
 
   Step into the time portal: Your journey starts by stepping into the time portal to begin visiting each day sequentially. (i.e., starting at the beginning of the array of prices).
 
-1. Identify the cheapest artifact: As you travel day-by-day (i.e., iterate through the array), you're continually on the lookout for the cheapest artifact you have encountered so far. This is your potential buying point, as buying the artifact at the lowest price will help maximize your profit. We can call this "min_price."
+1. Identify the cheapest artifact: As you travel day-by-day (i.e., iterate through the array), you're continually on the lookout for the cheapest artifact you have encountered so far. This is your potential buying point, as buying the artifact at the lowest price will help maximize your profit. We can call this "curMin."
 
 2. Consider the selling price: Each day, you also consider what your profit would be if you sold the artifact on this day (i.e., the current price minus the "min_price"). This is your potential selling point. We can call this "profit."
 
@@ -22,10 +22,10 @@ The Best Time to Buy and Sell Stock problem is a common coding problem where you
 
 Now, back to programming terms:
 
-You initialize two variables: "min_price" to infinity (or a very large number) and "max_profit" to 0.
+You initialize two variables: "curMin" to the first element in the given array and "curMax" to 0.
 
-As you iterate through the array, for each price, you update "min_price" if the current price is lower and "max_profit" if selling at the current price would yield a higher profit (current price - min_price).
+As you iterate through the array, for each price, you update "curMin" if the current price is lower and "curMax" if selling at the current price would yield a higher profit (current price - curMin).
 
-At the end of the loop, "max_profit" will hold the maximum profit you can achieve by buying and selling the stock.
+At the end of the loop, "curMax" will hold the maximum profit you can achieve by buying and selling the stock.
 
 This algorithm is efficient (O(n)) as it only needs to loop through the array once, and it doesn't require extra space beyond the two variables for the minimum price and maximum profit, so it's also space-efficient (O(1)).
