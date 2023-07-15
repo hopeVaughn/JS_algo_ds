@@ -11,14 +11,10 @@
 // Output: false
 
 function containsDuplicate(nums) {
-  const seen = new Set();
+  let set = new Set(nums);
 
-  for (const num of nums) {
-    if (seen.has(num)) return true;
-    seen.add(num);
-  }
+  return set.size !== nums.length;
 
-  return false;
 }
 
 module.exports = { containsDuplicate };
