@@ -12,9 +12,9 @@ The Best Time to Buy and Sell Stock problem is a common coding problem where you
 
 1. Identify the cheapest artifact: As you travel day-by-day (i.e., iterate through the array), you're continually on the lookout for the cheapest artifact you have encountered so far. This is your potential buying point, as buying the artifact at the lowest price will help maximize your profit. We can call this "curMin."
 
-2. Consider the selling price: Each day, you also consider what your profit would be if you sold the artifact on this day (i.e., the current price minus the "min_price"). This is your potential selling point. We can call this "profit."
+2. Consider the selling price: Each day, you also consider what your profit would be if you sold the artifact on this day (i.e., the current price minus the "curMin"). This is your potential selling point. We can call this "profit."
 
-3. Seek the best deal: As a smart merchant, you want to sell the artifact at the highest possible price. So, if the "profit" for today is higher than any profit you've considered so far, you make a mental note of this as the most profitable sale you could make. We can call this "max_profit."
+3. Seek the best deal: As a smart merchant, you want to sell the artifact at the highest possible price. So, if the "profit" for today is higher than any profit you've considered so far, you make a mental note of this as the most profitable sale you could make. We can call this "curMax."
 
 4. Travel through time: You continue this process, hopping from day to day (i.e., moving through the array) always watching for the lowest buying price and the highest selling profit.
 
