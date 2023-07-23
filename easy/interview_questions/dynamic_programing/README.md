@@ -29,3 +29,21 @@ As you iterate through the array, for each price, you update "curMin" if the cur
 At the end of the loop, "curMax" will hold the maximum profit you can achieve by buying and selling the stock.
 
 This algorithm is efficient (O(n)) as it only needs to loop through the array once, and it doesn't require extra space beyond the two variables for the minimum price and maximum profit, so it's also space-efficient (O(1)).
+
+## Max Subarray
+
+Imagine you're an explorer venturing through a long mountain range (representing the array of numbers, where each number represents the altitude of the mountain). You're tasked with finding the path through the range that provides the highest cumulative elevation gain, but there's a catch - you can only move forward, and you cannot skip any mountains.
+
+Here's how you use the maxSubArray algorithm to plan your path:
+
+1. Start your journey: You begin at the first mountain and note its altitude as your current highest elevation gain (currMax), and as the highest total elevation gain you've seen so far (maxima).
+
+2. Venture forth: You start moving forward through the mountains (looping through the array from the second element).
+
+3. Decide your path: For each mountain, you decide whether it's better to start a new journey from this mountain (take the current mountain's altitude nums[i]) or to continue your current journey (add the current mountain's altitude to your current elevation gain currMax + nums[i]). You pick the option that gives the higher elevation gain and update your current journey (currMax = Math.max(nums[i], currMax + nums[i])).
+
+4. Note the highest gain: Along the way, if your current journey's elevation gain becomes greater than the highest total gain you've seen before, you update your record (maxima = Math.max(maxima, currMax)).
+
+5. Finish the journey: Once you've moved through all the mountains, you'll have your path that yields the maximum cumulative elevation gain. This is your maxima.
+
+In essence, this algorithm uses a dynamic programming approach to keep track of the maximum subarray sum at each point in the array, and it updates the global maximum subarray sum whenever a larger subarray sum is found. It's an efficient approach known as Kadane's algorithm, and it has a time complexity of O(n), as it makes a single pass through the array.
