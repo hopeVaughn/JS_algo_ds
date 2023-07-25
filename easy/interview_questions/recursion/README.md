@@ -140,4 +140,3 @@ Here's how you'd use the `maxDepthBFS` algorithm to solve this:
 6. **Finish the harvest:** Once you've harvested all the levels of the tree (there's nothing left in your basket), you'll have the maximum depth of the tree. This is your `depth`.
 
 This algorithm uses a breadth-first search strategy to traverse the tree level by level and uses a queue to keep track of the nodes to be processed at each level. It's a highly efficient way to solve this problem, with a time complexity proportional to the number of nodes in the tree (O(n)), since it visits each node exactly once.
-
