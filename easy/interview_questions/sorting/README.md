@@ -1,5 +1,7 @@
 # Visual and meaningful explanations of sorting algorithms
 
+[Return to Main README](../../../README.md)
+
 ## Selection Sort
 
 Selection Sort is a simple comparison-based sorting algorithm. Its name comes from the way it continually selects the smallest (or largest, depending on the sorting order) element from the unsorted part of the list and swaps it to its final position in the sorted part of the list.

@@ -1,5 +1,7 @@
 ## Recursion
 
+[Return to Main README](../../../README.md)
+
 #### Special Note re: Binary Tree creation
 
 The examples produced for the isSameTree function uses the following binary tree creation pattern:
@@ -113,9 +115,9 @@ Here's how you'd use the `maxDepthRecursive` function to solve this:
 
 2. **Check if there's a tree:** Before you start climbing, you check if there's a tree to climb at all! If there's no tree (`root === null`), you are already at the maximum depth, which is `0`.
 
-3. **Choose your path:** You have two paths to choose from - you can either climb up the left branch of the tree or up the right branch. But since you're looking for the maximum depth, you want to choose the path that lets you climb the highest. 
+3. **Choose your path:** You have two paths to choose from - you can either climb up the left branch of the tree or up the right branch. But since you're looking for the maximum depth, you want to choose the path that lets you climb the highest.
 
-4. **Climb up the tree:** You begin your climb! With each step, you repeat this process, constantly deciding whether to go left or right by asking yourself, "which path lets me climb higher?" (`Math.max(maxDepthRecursive(root.left), maxDepthRecursive(root.right))`). Each time you make a step, you count it (`1 + ...`). 
+4. **Climb up the tree:** You begin your climb! With each step, you repeat this process, constantly deciding whether to go left or right by asking yourself, "which path lets me climb higher?" (`Math.max(maxDepthRecursive(root.left), maxDepthRecursive(root.right))`). Each time you make a step, you count it (`1 + ...`).
 
 5. **Reach the farthest leaf:** Eventually, you'll reach the top of the tree, where there's no more tree to climb. At this point, your recursion ends, and you can look back and see how high you've climbed - this is your maximum depth!
 
@@ -135,7 +137,7 @@ Here's how you'd use the `maxDepthBFS` algorithm to solve this:
 
 4. **Harvest level by level:** Now, you start the harvest. Instead of climbing up the tree (like in the depth-first search), you decide to harvest each level of the tree at a time (breadth-first search). For each level (`while (queue.length)`), you take all the apples at that level (`let curr = queue.shift()`) and put any apples from the next level (`if (curr.left) queue.push(curr.left); if (curr.right) queue.push(curr.right);`) into your basket for the next round.
 
-5. **Keep track of the depth:** Each time you finish harvesting a level, you note down the depth of that level (`depth++`). 
+5. **Keep track of the depth:** Each time you finish harvesting a level, you note down the depth of that level (`depth++`).
 
 6. **Finish the harvest:** Once you've harvested all the levels of the tree (there's nothing left in your basket), you'll have the maximum depth of the tree. This is your `depth`.
 

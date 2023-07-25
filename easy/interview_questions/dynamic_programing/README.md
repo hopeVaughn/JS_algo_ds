@@ -1,5 +1,7 @@
 # Visual and meaningful explanations of Dynamic Programming algorithms
 
+[Return to Main README](../../../README.md)
+
 ## Best Time to Buy and Sell Stock
 
 The Best Time to Buy and Sell Stock problem is a common coding problem where you are given an array of numbers representing the price of a stock on each day. You need to find the maximum profit you can make by buying and selling a stock. The output is usually the maximum profit.

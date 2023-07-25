@@ -1,5 +1,7 @@
 # Visual and meaningful explanations of two pointer algorithms
 
+[Return to Main README](../../../README.md)
+
 ## Pascals Triangle
 
 Pascals Triangle

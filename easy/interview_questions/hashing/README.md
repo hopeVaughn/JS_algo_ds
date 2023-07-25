@@ -1,5 +1,7 @@
 # Visual and meaningful explanations of Hashing algorithms
 
+[Return to Main README](../../../README.md)
+
 ## Contains Duplicate
 
 Let's illustrate this using a scenario where you are hosting a large, exclusive party, where every guest has a unique invitation code. Your task is to ensure no one tries to crash your party using a duplicated invitation code.
