@@ -2,6 +2,12 @@
 
 [Return to Main README](../../../README.md)
 
+## Table of Contents
+
+1. [Selection Sort](#selection-sort)
+2. [Bubble Sort](#bubble-sort)
+3. [Insertion Sort](#insertion-sort)
+
 ## Selection Sort
 
 Selection Sort is a simple comparison-based sorting algorithm. Its name comes from the way it continually selects the smallest (or largest, depending on the sorting order) element from the unsorted part of the list and swaps it to its final position in the sorted part of the list.
@@ -24,7 +30,7 @@ After these steps, all the books are sorted in increasing order of size on your 
 
 Note that Selection Sort has a time complexity of O(n^2), which makes it inefficient on large lists, and it performs worse than the similar Insertion Sort. However, it has the property of minimizing the number of swaps, in case this operation is costly.
 
-Here's a visualization of the Selection Sort algorithm in action:
+[⬆️ Back to Top](#visual-and-meaningful-explanations-of-sorting-algorithms)
 
 ## Bubble Sort
 
@@ -50,6 +56,8 @@ That's the essence of the Bubble Sort algorithm.
 
 Bear in mind that like Selection Sort, Bubble Sort also has a time complexity of O(n^2) and is not suitable for large lists. There are more efficient algorithms for larger lists, such as QuickSort, MergeSort, and HeapSort. However, Bubble Sort is straightforward to understand and implement, which makes it a useful educational tool for teaching the concept of sorting algorithms.
 
+[⬆️ Back to Top](#visual-and-meaningful-explanations-of-sorting-algorithms)
+
 ## Insertion Sort
 
 The insertion sort algorithm is a simple sorting algorithm that builds the final sorted array (or list) one item at a time. It's much less efficient on large lists than more advanced algorithms such as quicksort, heapsort, or mergesort, but it has its uses in particular contexts.
@@ -67,3 +75,5 @@ Let's think about playing a game of cards for this one.
 5. **Finalizing the hand:** After you've picked up all the cards from the table, the cards in your hand are sorted in increasing order. You've now completed the game.
 
 This process, which you've just followed, is essentially the Insertion Sort algorithm. In computational terms, the "cards in your hand" can be thought of as a sorted subarray of the array you're sorting. At each step, you extend the sorted subarray by one element, by inserting the next element into its correct position within the subarray. This analogy illustrates the simplicity and intuitive nature of the insertion sort algorithm, but also hints at its inefficiency. Finding the correct position for a card can, in the worst case, require scanning the entire hand so far, which is why insertion sort is less suitable for large, unsorted datasets. However, it performs well on small datasets or on lists that are already partially sorted.
+
+[⬆️ Back to Top](#visual-and-meaningful-explanations-of-sorting-algorithms)

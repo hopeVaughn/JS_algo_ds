@@ -2,6 +2,10 @@
 
 [Return to Main README](../../../README.md)
 
+## Table of Contents
+1. [Best Time to Buy and Sell Stock](#best-time-to-buy-and-sell-stock)
+2. [Max Subarray](#max-subarray)
+
 ## Best Time to Buy and Sell Stock
 
 The Best Time to Buy and Sell Stock problem is a common coding problem where you are given an array of numbers representing the price of a stock on each day. You need to find the maximum profit you can make by buying and selling a stock. The output is usually the maximum profit.
@@ -32,6 +36,8 @@ At the end of the loop, "curMax" will hold the maximum profit you can achieve by
 
 This algorithm is efficient (O(n)) as it only needs to loop through the array once, and it doesn't require extra space beyond the two variables for the minimum price and maximum profit, so it's also space-efficient (O(1)).
 
+[⬆️ Back to Top](#visual-and-meaningful-explanations-of-dynamic-programming-algorithms)
+
 ## Max Subarray
 
 Imagine you're an explorer venturing through a long mountain range (representing the array of numbers, where each number represents the altitude of the mountain). You're tasked with finding the path through the range that provides the highest cumulative elevation gain, but there's a catch - you can only move forward, and you cannot skip any mountains.
@@ -49,3 +55,5 @@ Here's how you use the maxSubArray algorithm to plan your path:
 5. Finish the journey: Once you've moved through all the mountains, you'll have your path that yields the maximum cumulative elevation gain. This is your maxima.
 
 In essence, this algorithm uses a dynamic programming approach to keep track of the maximum subarray sum at each point in the array, and it updates the global maximum subarray sum whenever a larger subarray sum is found. It's an efficient approach known as Kadane's algorithm, and it has a time complexity of O(n), as it makes a single pass through the array.
+
+[⬆️ Back to Top](#visual-and-meaningful-explanations-of-dynamic-programming-algorithms)

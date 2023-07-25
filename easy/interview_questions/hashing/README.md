@@ -2,6 +2,9 @@
 
 [Return to Main README](../../../README.md)
 
+## Table of Contents
+1. [Contains Duplicate](#contains-duplicate)
+
 ## Contains Duplicate
 
 Let's illustrate this using a scenario where you are hosting a large, exclusive party, where every guest has a unique invitation code. Your task is to ensure no one tries to crash your party using a duplicated invitation code.
@@ -19,3 +22,5 @@ Here's how you'd use the "Contains Duplicate" algorithm to verify:
 5. All codes are unique: If the numbers match, it means every guest had a unique code, and there are no duplicates. So, you return false.
 
 This JavaScript code solution to the "Contains Duplicate" problem is very concise and efficient. It takes advantage of the properties of the JavaScript Set object to quickly remove duplicates from the array and then compares the size of the Set (i.e., the number of unique elements) to the size of the original array.If the sizes aren't equal, that means there were duplicates in the array. If the sizes are equal, that means there were no duplicates. This operation has a linear time complexity, O(n), as it needs to iterate over the entire array once.
+
+[⬆️ Back to Top](#visual-and-meaningful-explanations-of-hashing-algorithms)

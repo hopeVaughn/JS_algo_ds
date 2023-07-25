@@ -1,6 +1,12 @@
-## Recursion
+# Visual and meaningful explanations of Recursive algorithms
 
 [Return to Main README](../../../README.md)
+
+## Table of Contents
+
+1. [Same Tree](#same-tree)
+2. [Maximum Depth of Binary Tree (Recursion)](#maximum-depth-of-binary-tree-recursion)
+3. [Maximum Depth of Binary Tree (Breadth-First Search)](#maximum-depth-of-binary-tree-breadth-first-search)
 
 #### Special Note re: Binary Tree creation
 
@@ -63,6 +69,8 @@ Once all pathways are set, the city (binary tree) is constructed. The function t
 
 By using the `buildTree` function, we can convert a given level order layout into a binary tree. The time complexity is O(n), where n is the number of elements in vals, because we're going through all elements twice (once for creating nodes and once for creating connections). The space complexity is also O(n) for storing the nodes.
 
+[⬆️ Back to Top](#visual-and-meaningful-explanations-of-recursive-algorithms)
+
 ### Same Tree
 
 Imagine you are an art critic, and your job is to determine whether two sculptures (in this case, binary trees p and q) are identical. You could look at both sculptures from a distance, but that might not be accurate. Instead, you decide to examine every part of each sculpture meticulously.
@@ -105,6 +113,8 @@ This is essentially what the isSameTree function does. It starts with the root o
 
 This way, it compares every corresponding node in the binary trees until it finds a difference or verifies that they are identical. The time complexity is O(n), where n is the total number of nodes in the tree, because in the worst case scenario, we have to visit every node in both trees once. The space complexity is also O(n) in the worst case because the maximum amount of space is taken up by the recursive stack in the case of a skewed tree.
 
+[⬆️ Back to Top](#visual-and-meaningful-explanations-of-recursive-algorithms)
+
 ### Maximum Depth of Binary Tree (Recursion)
 
 Let's picture this as if you are a hiker in a forest full of trees, where each tree is actually a binary tree. Your challenge is to find out the maximum depth of the tree (or in other words, how far you can hike up the tree from the root to the farthest leaf).
@@ -123,7 +133,9 @@ Here's how you'd use the `maxDepthRecursive` function to solve this:
 
 This algorithm uses a depth-first search strategy to traverse the tree and uses recursion to compare the heights of the left and right subtrees of each node. It's a very efficient way to solve this problem, with a time complexity proportional to the number of nodes in the tree (O(n)), since it visits each node exactly once.
 
-### Maximum Depth of Binary Tree (Breath-First Search)
+[⬆️ Back to Top](#visual-and-meaningful-explanations-of-recursive-algorithms)
+
+### Maximum Depth of Binary Tree (Breadth-First Search)
 
 Imagine you're in charge of an orchard full of various trees, where each tree is actually a binary tree. Your task is to find the maximum depth of each tree (i.e., how far the furthest apple is from the trunk).
 
@@ -142,3 +154,5 @@ Here's how you'd use the `maxDepthBFS` algorithm to solve this:
 6. **Finish the harvest:** Once you've harvested all the levels of the tree (there's nothing left in your basket), you'll have the maximum depth of the tree. This is your `depth`.
 
 This algorithm uses a breadth-first search strategy to traverse the tree level by level and uses a queue to keep track of the nodes to be processed at each level. It's a highly efficient way to solve this problem, with a time complexity proportional to the number of nodes in the tree (O(n)), since it visits each node exactly once.
+
+[⬆️ Back to Top](#visual-and-meaningful-explanations-of-recursive-algorithms)

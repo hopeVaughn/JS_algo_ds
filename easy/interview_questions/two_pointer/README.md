@@ -2,6 +2,11 @@
 
 [Return to Main README](../../../README.md)
 
+## Table of Contents
+
+1. [Pascals Triangle](#pascals-triangle)
+2. [Two Sum](#two-sum)
+
 ## Pascals Triangle
 
 Pascals Triangle
@@ -45,6 +50,7 @@ And there you have it! The "Raindrop Pyramid" analogy shows how Pascal's Triangl
 
 In a computational sense, to generate Pascal's Triangle, we initialize the triangle with a row of a single 1. Then for each subsequent row, we calculate each new value as the sum of the two values above it (with 'missing' values treated as 0). This continues for as many rows as we want to generate.
 
+[⬆️ Back to Top](#visual-and-meaningful-explanations-of-two-pointer-algorithms)
 
 ## Two Sum
 
@@ -69,3 +75,5 @@ In algorithmic terms, you're given an array of numbers and a target number. You 
 This solution is efficient because it only requires a single pass through the array and lookup in a hash map takes constant time on average. So, the overall time complexity is O(n), where n is the size of the array.
 
 So there you have it, Sherlock! With this approach, you can solve the challenge quickly and enjoy the rest of the party.
+
+[⬆️ Back to Top](#visual-and-meaningful-explanations-of-two-pointer-algorithms)
